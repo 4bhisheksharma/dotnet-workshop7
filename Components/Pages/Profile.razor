@@ -1,0 +1,17 @@
+﻿@page "/profile"
+<h3>Profile</h3>
+
+<img src="@photoPath" alt="bijaye sahi" width="250" height="250">
+<h5>@studentName is the name of good student.</h5>
+<h5>@courseName is his course.</h5>
+<h5>@batchYear is his batch year.</h5>
+
+
+
+@code {
+    public string photoPath = "/images/bijaye-sahi.jpg";
+    public string studentName = "Bijaye Sahi";
+    public string courseName = "BSc. (Hons) Computing";
+    public int batchYear = 2025;
+
+}                                            

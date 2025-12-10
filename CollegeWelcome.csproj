@@ -61,13 +61,17 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
+      <AndroidResource Remove="wwwroot\NewFolder\**" />
+      <Compile Remove="wwwroot\NewFolder\**" />
+      <Content Remove="wwwroot\NewFolder\**" />
+      <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+      <None Remove="wwwroot\NewFolder\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\NewFolder\" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
     </ItemGroup>
 
 </Project>
